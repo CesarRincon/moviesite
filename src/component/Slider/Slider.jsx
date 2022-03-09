@@ -3,6 +3,7 @@ import { useQuery } from "../../hooks/useQuery";
 import { get } from "../../httpClient";
 import { Loader } from "../Loader";
 import styles from '../Slider/Slider.module.css'
+import { FaPlay, FaInfo } from 'react-icons/fa'
 
 export function Slider() {
 
@@ -45,19 +46,39 @@ export function Slider() {
 
         <div className={styles.s}>
             <div className={styles.sContent}>
-                <ul className={styles.sList}>
-                    {
-                        film.map((data) => {
-                            return (
+
+                {
+                    film.map((data) => {
+                        return (
+                            <>
                                 <div className={styles.slides}>
-                                    <img className={styles.imgs} src={imageUrl + data.poster_path} alt=""/>
+                                    <img className={styles.imgs} src={imageUrl + data.backdrop_path} alt="" />
+                                    
                                 </div>
-                            )
-                        })
-                    }
-                </ul>
+                                <div className={styles.info}>
+                                    <h1>Spider Man</h1>
+                                    <span className={styles.desc}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et qui illum quaerat fugiat quasi at saepe laborum provident sapiente distinctio. Vero, ipsam asperiores. Ut quia iste quasi aliquam commodi similique?</span>
+                                    <div className={styles.buttons}>
+                                        <button className={styles.play}>
+                                            <FaPlay />
+                                            <span>Play</span>
+                                        </button>
+                                        <button className={styles.more}>
+                                            <FaInfo />
+                                            <span>More</span>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    })
+                }
+
+
+
             </div>
-            
+
         </div>
     )
 }

@@ -1,16 +1,51 @@
-.sContent {
+.s {
     width: 100%;
-    height: 400px;
+    height: 90vh;
+    position: relative;
     overflow: hidden;
-    left: 0;
 }
 
-ul  {
-    margin: 0;
-    
+.slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.slides {
+.info   {
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    color: white;
     display: flex;
     flex-direction: column;
 }
+.desc   {
+    margin: 20px 0px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor: pointer;    
+}
+
+.buttons .play   {
+    background-color: white;
+    color: black;
+}
+
+.buttons button:hover {
+    background-color: rgb(216, 216, 216);
+}
+

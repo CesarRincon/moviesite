@@ -1,3 +1,43 @@
-.navbar  li a{
+.navbar {
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    z-index: 100;
+    
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.left a{
+    text-decoration: none;
+}
+
+.right a{
     color: white;
+}
+
+.left{
+    align-content: center;
+    justify-content: center;
+}
+
+.right nav ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 760px){
+    .navbar li{
+      display: none;
+    }
 }

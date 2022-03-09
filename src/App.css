@@ -1,14 +1,4 @@
-header{
-  width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  background-color: black;
-  z-index: 100;
-}
+
 
 .title-logo{
   margin: 8px;
@@ -53,22 +43,11 @@ header input{
   color: white;
 }
 
-header input:focus{
-  width: 200px;
-  outline: none;
-  transition: all .9s;
-  border-color: rgb(255, 255, 255);
-  background-color: rgb(31, 31, 36);
-  
-}
 
 
 
-@media (max-width: 760px){
-  header li{
-    display: none;
-  }
-}
+
+
 
 
 
