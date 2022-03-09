@@ -1,0 +1,29 @@
+.filmCard{
+    list-style: none;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+.filmCard:hover{
+    opacity: 0.7;
+    transform: scale(1.03);
+    transition: 0.8s;
+    z-index: 0;
+}
+
+.filmimage {
+    border-radius: 10px;
+    background-color: azure;
+}
+
+@media (max-width: 560px){
+    .filmimage{
+        width: 90%;
+        height: auto;
+    }
+}

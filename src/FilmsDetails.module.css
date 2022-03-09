@@ -1,0 +1,56 @@
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+@media (max-width: 700px){
+    .detailsContainer {
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+}
+@media (max-width: 1080px){
+    .detailsContainer {
+        margin-top: 80px;
+    }
+}
+
+.detailsContainer h1{
+    margin: 0;
+}
+
+.col {
+    min-width: 300px;
+    max-width: 400px;
+    max-height: 400px;
+    width: 50%;
+    margin: 15px;
+    height: auto;
+}
+
+.col1{
+    max-width: 1000px;
+    margin: 15px;
+    height: auto;
+}
+
+.filmimage{
+   border-radius: 10px; 
+}
+
+.filmDetails {
+    font-size: 1.5rem;
+}
+
+.buttonVer{
+    width: 130px;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+    border-style: none;
+    padding: 6px;
+}
+
+.buttonVer:hover{
+    background-color: rgba(0, 0, 0, 0.507);
+}

@@ -1,0 +1,16 @@
+.sContent {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    left: 0;
+}
+
+ul  {
+    margin: 0;
+    
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+}
